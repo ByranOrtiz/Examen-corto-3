@@ -1,0 +1,67 @@
+//librerias
+
+#include <stdio.h>
+#include "opbasic.h"
+#define piii 3.14159
+
+int main() {
+    int a,b;
+    printf("Por favor ingrese dos numeros separados por espacio: ");
+    scanf("%d %d",&a,&b);
+    int s=suma(a,b);
+    int r=resta(a,b);
+    int m=mult(a,b);
+    float d=divi(a,b);
+    
+    printf("La suma es %d\n",s);
+    printf("La resta es %d\n",r);
+    printf("La multiplicacion es %d\n",m);
+    printf("La division es %f\n",d);
+    printf("El valor de Pi es %.5f", piii);
+    
+    
+    return 0;
+}
+
+
+
+
+
+#ifndef OPBASIC_H
+#define OPBASIC_H
+
+int suma(int a, int b);\
+int resta(int a, int b);
+int mult(int a, int b);
+float divi(float a, float b);
+
+#endif
+
+
+
+
+
+#include "opbasic.h"
+
+int suma(int a, int b)
+{
+    return a+b;
+}
+
+
+int resta(int a, int b)
+{
+    return a-b;
+}
+
+
+int mult(int a, int b)
+{
+    return a*b;
+}
+
+
+float divi(float a, float b)
+{
+    return a/b;
+}
