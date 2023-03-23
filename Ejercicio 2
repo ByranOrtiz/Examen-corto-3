@@ -1,0 +1,12 @@
+//Conversor °F a °C
+#include <stdio.h>
+
+int main()
+{
+    float f, c;
+    printf("Ingrese la temperatura en °F: ");
+    scanf("%f", &f);
+    c = 5*(f-32)/9;
+    printf("La temperatura en grados celcius es %.2f",c);
+    return 0; 
+}
