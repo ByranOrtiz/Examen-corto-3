@@ -1,0 +1,10 @@
+//Ejercicio 1: mostrar nombre y carnet en la consola =)
+#include <stdio.h>
+
+int main()
+{
+    int id=21758;
+    char name[12]="Bryan Ortiz";
+    printf("Mi nombre es %s y mi de carne es %d", name, id);
+    return 0;
+}
